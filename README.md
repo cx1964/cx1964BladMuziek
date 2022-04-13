@@ -3,5 +3,3 @@
 Bladmuziek in pdf en Musescore formaat (mscz)
 
 Autorisatie github nu obv token
-
-Test na reparatie git.
