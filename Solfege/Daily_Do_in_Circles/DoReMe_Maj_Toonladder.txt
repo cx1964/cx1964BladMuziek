@@ -1,0 +1,8 @@
+do  c
+ti  b
+la  a
+so  g
+fa  f
+me  e
+re  d
+do  c
