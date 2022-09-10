@@ -2,6 +2,8 @@
 # functie: script die random een solmisatie syllable toont om te oefen met benoemen
 
 import random
+from PIL import Image
+
 maxNumber = 10
 
 for i in range(maxNumber):
@@ -12,3 +14,14 @@ for i in range(maxNumber):
   # dus een plaatje van do, re, mi, enze op de notenbalk met filenamen 1syllable.png t/m 1syllable.png
   # er zijn ook plaatjes van de handsigns van 1hs.png t/m 7hs.png
 
+  # Toon een Cruwen handsign plaatje
+  fCHS = './'+ str(randomInt) +'chs.png'
+  img = Image.open(fCHS)
+  img.show()
+
+  # toDo
+  # 1: creer solmisatie syllable plaatjes 1ss.png t/m 7ss.png
+  # toon solmisatie syllable
+  #fSS = './'+ str(randomInt) + 'ss.png'
+  #img = Image.open(fSS)
+  #img.show()
