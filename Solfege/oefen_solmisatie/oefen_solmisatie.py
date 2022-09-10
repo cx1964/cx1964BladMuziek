@@ -1,5 +1,6 @@
 # file: oefen_solmisatie.py
 # functie: script die random een solmisatie syllable toont om te oefen met benoemen
+# doc: zie http://python-pillow.github.io/
 
 import random
 from PIL import Image
