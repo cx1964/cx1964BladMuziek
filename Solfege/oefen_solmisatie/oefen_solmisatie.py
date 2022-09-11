@@ -13,15 +13,14 @@ for i in range(maxNumber):
   print ("Random:", randomInt) 
   # lees een plaatje in en toon het plaatje
   # er zijn plaatjes van 1 t/m 7 met de solmisatie syllable
-  # dus een plaatje van do, re, mi, enze op de notenbalk met filenamen 1syllable.png t/m 1syllable.png
-  # er zijn ook plaatjes van de handsigns van 1hs.png t/m 7hs.png
+  # dus een plaatje van do, re, mi, enze op de notenbalk met filenamen 1ss.png t/m 7ss.png
+  # er zijn ook plaatjes van de handsigns van 1chs.png t/m 7chs.png
 
-  # toDo
-  # 1: creer solmisatie syllable plaatjes 1ss.png t/m 7ss.png
   # toon solmisatie syllable
-  #fSS = './'+ str(randomInt) + 'ss.png'
-  #img = Image.open(fSS)
-  #img.show()
+  fSS = './'+ str(randomInt) + 'ss.png'
+  img = Image.open(fSS)
+  img.show()
+  
   # slaap 15 seconden
   t=15
   time.sleep(t) 
