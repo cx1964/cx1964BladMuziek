@@ -47,6 +47,7 @@ else
 
   ### Begin aanpassen ###
   pipenv install pillow
+  pipenv install flask
   ## Einde aanpassen ###
 
   # Toon geinstalleerde modules 
