@@ -15,6 +15,7 @@
 # pyenv install --list
 # Nog onbekend hoe een versie te installeren hoger dan de system python versie op het OS
 export PYTHON_VERSION="3.10.4" 
+#export PYTHON_VERSION="3.10-buster" 
 ### Einde aanpassen ###
 
 
@@ -48,7 +49,13 @@ else
   ### Begin aanpassen ###
   pipenv install pillow
   pipenv install flask
-  pipenv install 'setuptools==58.3.0'
+
+  
+  pipenv uninstall setuptools
+  #pipenv install -e git+https://github.com/pypa/pipenv.git@issue-5075-setuptools
+  # pipenv install 'setuptools==58.3.0'
+  pipenv install 'setuptools==62.1.0'
+
   ## Einde aanpassen ###
 
   # Toon geinstalleerde modules 

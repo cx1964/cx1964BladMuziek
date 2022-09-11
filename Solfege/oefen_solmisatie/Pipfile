@@ -6,7 +6,7 @@ name = "pypi"
 [packages]
 pillow = "*"
 flask = "*"
-setuptools = "==58.3.0"
+setuptools = "==62.1.0"
 
 [dev-packages]
 
