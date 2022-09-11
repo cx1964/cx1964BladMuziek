@@ -10,9 +10,13 @@
 #      tbv runtime melding op Ubuntu 22.04 
 #      PkgResourcesDeprecationWarning: 1.16.0-unknown is an invalid version and will not be supported in a future release
 #      warnings.warn(
-#      setuptools aangepast 
-#      voor installa setuptools  versie 59.6.0
-#      zie script install_python_project_env.sh voor correctie    
+#      setuptools aangepast
+#      
+# ToDo
+#      Deze oplossing werkt niet voor mij : 
+#      voor installa setuptools  versie 59.6.0 (werkt niet)
+#      zie script install_python_project_env.sh voor correctie
+#      zie ook https://github.com/pypa/setuptools/issues/3278    
 #    
 
 from flask import Flask, render_template
