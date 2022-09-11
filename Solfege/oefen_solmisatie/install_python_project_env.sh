@@ -48,6 +48,7 @@ else
   ### Begin aanpassen ###
   pipenv install pillow
   pipenv install flask
+  pipenv install setuptools==58.3.0
   ## Einde aanpassen ###
 
   # Toon geinstalleerde modules 

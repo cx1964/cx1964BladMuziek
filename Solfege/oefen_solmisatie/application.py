@@ -4,15 +4,25 @@
 #          door deze te tonen. 
 # doc: zie http://python-pillow.github.io/
 #      zie https://stackoverflow.com/questions/46785507/python-flask-display-image-on-a-html-page
+#
+# Opmerking
+#      bug zie https://askubuntu.com/questions/1406952/what-is-the-meaning-of-this-pkgresourcesdeprecationwarning-warning-from-pipenv
+#      tbv runtime melding op Ubuntu 22.04 
+#      PkgResourcesDeprecationWarning: 1.16.0-unknown is an invalid version and will not be supported in a future release
+#      warnings.warn(
+#      setuptools aangepast 
+#      voor installa setuptools  versie 59.6.0
+#      zie script install_python_project_env.sh voor correctie    
+#    
 
 from flask import Flask, render_template
 import os
 import random
 
-PEOPLE_FOLDER = os.path.join('static', 'people_photo')
+PICTURE_FOLDER = os.path.join('static', '.')
 
 app = Flask(__name__)
-app.config['UPLOAD_FOLDER'] = PEOPLE_FOLDER
+app.config['UPLOAD_FOLDER'] = PICTURE_FOLDER
 
 @app.route('/')
 @app.route('/index')
@@ -25,8 +35,8 @@ def show_index():
     # er zijn ook plaatjes van de handsigns van 1chs.png t/m 7chs.png
 
     # toon solmisatie syllable
-    fSS = './'+ str(randomInt) + 'ss.png'
-    fCHS = './'+ str(randomInt) +'chs.png'
+    fSS = str(randomInt) + 'ss.png'
+    fCHS = str(randomInt) +'chs.png'
     full_filename = os.path.join(app.config['UPLOAD_FOLDER'], fSS)
     return render_template("index.html", user_image = full_filename)
 
