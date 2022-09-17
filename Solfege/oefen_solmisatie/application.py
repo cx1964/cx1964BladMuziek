@@ -28,6 +28,20 @@ PICTURE_FOLDER = os.path.join('static', '.')
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = PICTURE_FOLDER
 
+## BEGIN tbv test
+## Als Flask geod geinstalleerd is moet onderstaande regels werken
+## Start een browser met url localhost:5000
+## Dit werkt !!!
+#@app.route('/')
+#def display():
+#    return "Ik ben application.py"
+#
+#if __name__=='__main__':
+#    app.run()
+## EIND tbv test
+
+
+
 @app.route('/')
 @app.route('/index')
 def show_index():
@@ -41,6 +55,20 @@ def show_index():
     # toon solmisatie syllable
     fSS = str(randomInt) + 'ss.png'
     fCHS = str(randomInt) +'chs.png'
+
+    """"
+    ToDo:
+    Onderstaande regels werken nog niet 
+    Iets met dirctory of file
+    nog uitzoeken. 
+    Doel is hoe kan je plaatjes laten zin in Flask?
+
     full_filename = os.path.join(app.config['UPLOAD_FOLDER'], fSS)
     return render_template("index.html", user_image = full_filename)
+    """
 
+    return "Ik ben application.py @ localhost:5000/index"
+
+
+if __name__=='__main__':
+    app.run()

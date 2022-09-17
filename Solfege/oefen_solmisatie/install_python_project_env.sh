@@ -49,12 +49,12 @@ else
   ### Begin aanpassen ###
   pipenv install pillow
   pipenv install flask
-
+  pipenv install opencv-python
   
-  pipenv uninstall setuptools
-  #pipenv install -e git+https://github.com/pypa/pipenv.git@issue-5075-setuptools
+  # pipenv uninstall setuptools
   # pipenv install 'setuptools==58.3.0'
-  pipenv install 'setuptools==62.1.0'
+  # pipenv install 'setuptools==62.1.0'
+  pipenv install 'setuptools'
 
   ## Einde aanpassen ###
 
