@@ -28,6 +28,7 @@ import random
 app = Flask(__name__)
 #app.config['UPLOAD_FOLDER'] = PICTURE_FOLDER
 
+path="/home/claude/Desktop/Downloads/cx1964BladMuziek/Solfege/oefen_solmisatie/"
 maxNumber = 10
 ssList = [] # list met solmisatie syllable pictures (inclusief pad)
 chsList = [] # list met Cruwens' handsigns pictures (inclusief pad)
@@ -46,11 +47,11 @@ def show_index():
     # Bouw 2 lists op met filenamen van pictures
     for i in range(maxNumber):
       # maak een random filenaam met pad tbv de Solmisatie syllable pictures
-      fSS = './'+ str(randomInt) + 'ss.png' 
+      fSS = path + str(randomInt) + 'ss.png' 
       ssList.append(fSS)
 
       # maak een random filenaam met pad tbv de Cruwens' handsigns pictures
-      fCHS = './'+ str(randomInt) +'chs.png'
+      fCHS = path + str(randomInt) +'chs.png'
       chsList.append(fCHS)
 
 
@@ -72,8 +73,8 @@ def show_index():
     # zie ook https://flask.palletsprojects.com/en/2.2.x/tutorial/templates/?highlight=template
     # zie ook https://www.digitalocean.com/community/tutorials/how-to-use-templates-in-a-flask-application
     # zie ook jinja https://jinja.palletsprojects.com/en/3.1.x/
-    # return render_template("index.html", fSS=ssList ) #: probeer eerst met 1 list later met fCHS=chsList)
-    return render_template("index.html") # zonder parameters
+    return render_template("index.html", ssList=ssList ) #: probeer eerst met 1 list later met fCHS=chsList)
+    #return render_template("index.html") # zonder parameters
 
 if __name__=='__main__':
     app.run()
