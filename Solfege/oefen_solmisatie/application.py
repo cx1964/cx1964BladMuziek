@@ -66,8 +66,14 @@ def show_index():
     return render_template("index.html", user_image = full_filename)
     """
 
-    return "Ik ben application.py @ localhost:5000/index"
+    # return "Ik ben application.py @ localhost:5000/index"
 
+    # geef beide list met files mee om mbv template generator een stactic HTML file te maken
+    # zie ook https://flask.palletsprojects.com/en/2.2.x/tutorial/templates/?highlight=template
+    # zie ook https://www.digitalocean.com/community/tutorials/how-to-use-templates-in-a-flask-application
+    # zie ook jinja https://jinja.palletsprojects.com/en/3.1.x/
+    # return render_template("index.html", fSS=ssList ) #: probeer eerst met 1 list later met fCHS=chsList)
+    return render_template("index.html") # zonder parameters
 
 if __name__=='__main__':
     app.run()
