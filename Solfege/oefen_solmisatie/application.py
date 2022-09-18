@@ -23,23 +23,14 @@ from flask import Flask, render_template
 import os
 import random
 
-PICTURE_FOLDER = os.path.join('static', '.')
+#PICTURE_FOLDER = os.path.join('static', '.')
 
 app = Flask(__name__)
-app.config['UPLOAD_FOLDER'] = PICTURE_FOLDER
+#app.config['UPLOAD_FOLDER'] = PICTURE_FOLDER
 
-## BEGIN tbv test
-## Als Flask geod geinstalleerd is moet onderstaande regels werken
-## Start een browser met url localhost:5000
-## Dit werkt !!!
-#@app.route('/')
-#def display():
-#    return "Ik ben application.py"
-#
-#if __name__=='__main__':
-#    app.run()
-## EIND tbv test
-
+maxNumber = 10
+ssList = [] # list met solmisatie syllable pictures (inclusief pad)
+chsList = [] # list met Cruwens' handsigns pictures (inclusief pad)
 
 
 @app.route('/')
@@ -52,9 +43,17 @@ def show_index():
     # dus een plaatje van do, re, mi, enze op de notenbalk met filenamen 1ss.png t/m 7ss.png
     # er zijn ook plaatjes van de handsigns van 1chs.png t/m 7chs.png
 
-    # toon solmisatie syllable
-    fSS = str(randomInt) + 'ss.png'
-    fCHS = str(randomInt) +'chs.png'
+    # Bouw 2 lists op met filenamen van pictures
+    for i in range(maxNumber):
+      # maak een random filenaam met pad tbv de Solmisatie syllable pictures
+      fSS = './'+ str(randomInt) + 'ss.png' 
+      ssList.append(fSS)
+
+      # maak een random filenaam met pad tbv de Cruwens' handsigns pictures
+      fCHS = './'+ str(randomInt) +'chs.png'
+      chsList.append(fCHS)
+
+
 
     """"
     ToDo:
