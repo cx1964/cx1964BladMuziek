@@ -1,0 +1,4 @@
+# fiel:  ToDo.txt
+
+In ./templates/index.html:
+Het dynamisch opbouwen van de filenamen van de plaatjes gaat nog niet goed
