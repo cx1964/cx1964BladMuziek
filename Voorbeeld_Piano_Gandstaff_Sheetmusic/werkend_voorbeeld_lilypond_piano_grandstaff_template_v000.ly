@@ -20,24 +20,24 @@ upper =
             \set fingeringOrientations = #'(up)
            
            % Upper Regel1
-            (<c''-1 e''-3>2\p  | % m1 -- voorbeeld gebruik van beams
+            <c''-1 e''-3>2\p(  \bar "|" % m1 -- voorbeeld gebruik van beams
             
-            <d''-2 f''-4>2\<   | % m2 -- start met \< 
-            <b'  gs''>2        | % m3 -- omdat taal engels is gebruik f voor flat en s voor sharp
-            <c'' a''>2)\!\f    | % m4 -- stop cresendo met \!
+            <d''-2 f''-4>2\<   \bar "|" % m2 -- start met \< 
+            <b'  gs''>2        \bar "|" % m3 -- omdat taal engels is gebruik f voor flat en s voor sharp
+            <c'' a''>2)\!\f    \bar "|" % m4 -- stop cresendo met \!
             \break
 
            % Upper Regel2
-           r4 r4 | % m5
-           r4 r4 | % m6
-           r4 r4 | % m7
-           r4 r4 | % m8
+           r4 r4 \bar "|" % m5
+           r4 r4 \bar "|" % m6
+           r4 r4 \bar "|" % m7
+           r4 r4 \bar "|" % m8
            \break
 
            % Upper Regel3
-           r4 r4 | % m9
-           r4 r4 | % m10
-           r4 r4 | % m11
+           r4 r4 \bar "|"  % m9
+           r4 r4 \bar "|"  % m10
+           r4 r4 \bar "|"  % m11
            r4 r4 \bar "|." % m12
            \break
 
@@ -51,24 +51,24 @@ lower =
             \time 2/4
 
             % Lower Regel1
-            r8-"con pedale" f8 [f8 f8]  | % m1 -- voorbeeld gebruik van beams
-                                        | %    -- letop de beam bestaat uit 3 1/8 f noten
-            r8 f8 [f8 f8]  | % m2
-            r8 f8 [f8 f8]  | % m3
-            r8 f8 [e8 c8]  | % m4
+            r8-"con pedale" f8 [f8 f8]  \bar "|" % m1 -- voorbeeld gebruik van beams
+                                                 %    -- letop de beam bestaat uit 3 1/8 f noten
+            r8 f8 [f8 f8]  \bar "|"              % m2
+            r8 f8 [f8 f8]  \bar "|"              % m3
+            r8 f8 [e8 c8]  \bar "|"              % m4
             \break
 
             % Lower Regel2
-            r4 r4 | % m5
-            r4 r4 | % m6
-            r4 r4 | % m7
-            r4 r4 | % m8
+            r4 r4 \bar "|" % m5
+            r4 r4 \bar "|" % m6
+            r4 r4 \bar "|" % m7
+            r4 r4 \bar "|" % m8
             \break
 
             % Lower Regel3
-            r4 r4 | % m9
-            r4 r4 | % m10
-            r4 r4 | % m11
+            r4 r4 \bar "|"  % m9
+            r4 r4 \bar "|"  % m10
+            r4 r4 \bar "|"  % m11
             r4 r4 \bar "|." % m12
             \break
           }
