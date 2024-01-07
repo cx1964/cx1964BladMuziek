@@ -1,6 +1,6 @@
 \version "2.22.2"
 % file: werkend_voorbeeld_lilypond_piano_grandstaff_template_v000.ly
-% C.X. la Fontiane
+% C.X. la Fontaine
 % 20240107 
 
 \pointAndClickOff
