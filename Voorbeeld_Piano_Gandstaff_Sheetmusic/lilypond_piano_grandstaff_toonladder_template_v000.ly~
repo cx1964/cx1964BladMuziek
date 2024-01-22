@@ -26,19 +26,14 @@ upper =
             % c'4^"C4" = centrale C
 
             % Upper Regel1
-            r4       r4       r4       r4           \bar "|"  % m1
-            r4       r4       r4       r4           \bar "|"  % m2
-            r4       r4       r4       r4           \bar "|"  % m3
-            r4       r4       r4       r4           \bar "|"  % m4
-            r4       r4       r4       r4           \bar "|"  % m5
-            g4^"G3"  a4^"A3"  b4^"B3"  c'4^"C4"     \bar "|"  % m6
-            d'4^"D4" e'4^"E4" f'4^"F4" g'4^"G4"     \bar "|"  % m7
-            a'4^"A4" r4       r4       r4           \bar "|"  % m8
-            r4       r4       r4       r4           \bar "|"  % m9
-            r4       r4       r4       r4           \bar "|"  % m10
-            r4       r4       r4       r4           \bar "|"  % m11
-            r4       r4       r4       r4           \bar "|"  % m12
-            r4       r4       r4       c'''''4^"C8" \bar "|." % m13
+            r4      r4      r4      r4        \bar "|" % m1
+            r4      r4      r4      r4        \bar "|" % m2
+            r4      r4      r4      r4        \bar "|" % m3
+            r4      r4      r4      r4        \bar "|" % m4
+            r4      r4      r4      r4        \bar "|" % m5
+            g4^"G3" a4^"A3" b4^"B3" c'4^"C4"  \bar "|" % m6
+            d'^"D4" e'^"E4" f'^"F4" g'^"G4"   \bar "|" % m7
+            
             \break
           } 
 
@@ -59,15 +54,7 @@ lower =
             f,4-"F2"   g,4-"G2"   a,4-"A2"   b,4-"B2"  \bar "|"  % m4
             c4-"C3"    d4-"D3"    e4-"E3"    f4-"F3"   \bar "|"  % m5
             g4-"G3"    a4-"A3"    b4-"B3"    c'4-"C4"  \bar "|"  % m6
-            r4         r4         r4         r4        \bar "|"  % m7
-            r4         r4         r4         r4        \bar "|"  % m8
-            r4         r4         r4         r4        \bar "|"  % m9
-            r4         r4         r4         r4        \bar "|"  % m10
-            r4         r4         r4         r4        \bar "|"  % m11
-            r4         r4         r4         r4        \bar "|"  % m12
-            r4         r4         r4         r4        \bar "|." % m13
-
-
+            r4         r4         r4         r4        \bar "|." % m7
             \break
 
           }
@@ -83,7 +70,6 @@ lower =
     tagline = "werkend_voorbeeld_lilypond_piano_grandstaff_template_v000.ly  nog pagina nummer" % dit onderdrukt de default footer
   }
   
-  #(set-paper-size "a4landscape")
 
   %#(set-global-staff-size 19.997457142857144)
   \paper {
@@ -100,6 +86,8 @@ lower =
  
   %   short-indent = 1.3286153846153848\cm
   %
+     #(set-default-paper-size "a4landscape")
+     #(set-paper-size "a4")
   }
 
   % The score definition
