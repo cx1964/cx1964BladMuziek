@@ -83,10 +83,11 @@ lower =
     tagline = "werkend_voorbeeld_lilypond_piano_grandstaff_template_v000.ly  nog pagina nummer" % dit onderdrukt de default footer
   }
   
-  #(set-paper-size "a4landscape")
+ 
 
   %#(set-global-staff-size 19.997457142857144)
   \paper {
+     #(set-paper-size "a4" 'landscape)
   %
   %   paper-width = 21.59\cm
   %   paper-height = 27.94\cm
