@@ -6,7 +6,7 @@
 
 % file: cantus_firmi_v000a.ly
 % C.X. la Fontaine
-% 20240706
+% 20240707
 
 \pointAndClickOff
 
@@ -36,9 +36,9 @@ single =
             \relative {
               % Single Regel1
               \time 12/1
-              c'1^"Thomas Morley (c. 1557 - 1602)"      f       e       d  
-              r1                                        r1      r1      r1        
-              r1                                        r1      r1      r1  \bar "||" % regel1
+              c'1^"Thomas Morley (c. 1557 - 1602)"      f1     e1     d1  
+              c1                                        f1     g1     a1        
+              g1                                        e1     d1     c1  \bar "||" % regel1
             }
             \break
             
@@ -48,9 +48,9 @@ single =
             {                                                                
               % Single Regel2
               \time 9/1
-              c'1^"Johan Phillip Kimberger (1721-1783)"  g'      e'      a'         
-              r1                                        r1      r1      r1  
-              r1                                                            \bar "||" % regel2
+              c'1^"Johan Phillip Kimberger (1721-1783)"  g'1     e'1     a'1         
+              g'1                                        f'1     e'1     d'1  
+              c'1                                                            \bar "||" % regel2
             }
             \break                                                          
 
@@ -61,8 +61,8 @@ single =
             % Letop Hier onstaat een fout melding
             %  
             a1^"Franz Joseph Haydn (1732-1809)"      c1      b1      e1        
-            r1                                       r1      r1      r1        
-            r1                                       r1      r1          \bar "||" % regel3
+            c1                                       f1      d1      e1        
+            c1                                       b1      a1          \bar "||" % regel3
             }
             \break
 
@@ -70,8 +70,8 @@ single =
               % Single Regel4
               \time 12/1
               c'1^"Johann Georg Albrechtsberger (1736 - 1809)"       e1      d1      b1
-              r1                                                     r1      r1      r1
-              r1                                                     r1      r1      r1  \bar "||" % regel4
+              c1                                                     a1      b1      g1
+              c1                                                     e1      d1      c1  \bar "||" % regel4
             }
             \break
 
@@ -79,9 +79,9 @@ single =
               % Single Regel5
               \time 14/1
               d'1^"Luigi Cherubini (1760 - 1842)"      g1      e1      f1        
-              r1                                       r1      r1      r1        
-              r1                                       r1      r1      r1        
-              r1                                       r1                  \bar "||" % regel5
+              e1                                       a1      g1      e1        
+              c1                                       d1      e1      f1        
+              e1                                       d1                  \bar "||" % regel5
             }
             \break
 
@@ -89,8 +89,8 @@ single =
               \time 9/1
               % Single Regel6
               e'1^"Knud Jeppesen (1892 - 1974)"     d1      e1      f1       
-              r1                                    r1       r1       r1                      
-              r1                                                          \bar "||" % regel6
+              g1                                    a1      d,1     f1                      
+              e1                                                        \bar "||" % regel6
             }
             \break
 
@@ -101,10 +101,10 @@ single =
 \book {
   \header {
     title =  "Cantus Firmi"
-    subtitle =  "Solfège template versie v000"
+    subtitle =  "template versie v000"
     % composer =  ""
     encodingsoftware =  "Handmatig"
-    encodingdate =  "20240706"
+    encodingdate =  "20240707"
     first-page-number = 1
     tagline = "cantus_firmi_v000a.ly  nog pagina nummer" % dit onderdrukt de default footer
   }
