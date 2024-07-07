@@ -131,7 +131,7 @@ single =
   % The score definition
   \score {
     <<
-        \new Staff = "single"   \single
+        \new Staff = "single" \with { \remove Time_signature_engraver }  \single
     >>
     % To create MIDI output, uncomment the following line:
     \midi {}  % This command creates a midi file
