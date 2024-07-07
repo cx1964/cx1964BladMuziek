@@ -30,64 +30,67 @@ single =
             % Aantal bekende noten op de G-sleutel (treble)
             % c'4^"C4" = centrale C
 
-            {
-            % Single Regel1
-            \time 12/1
-            c'1^"Thomas Morley (c. 1557 - 1602)"      r1      r1      r1  
-            r1                                        r1      r1      r1        
-            r1                                        r1      r1      r1  \bar "||" % regel1
+
+            % plaats hieronder eventule nootbalk met de melodie boven de CF
+
+            \relative {
+              % Single Regel1
+              \time 12/1
+              c'1^"Thomas Morley (c. 1557 - 1602)"      f       e       d  
+              r1                                        r1      r1      r1        
+              r1                                        r1      r1      r1  \bar "||" % regel1
             }
-            \break                                                        
+            \break
+            
+
+            
 
             {                                                                
-            % Single Regel2
-            \time 9/1
-            c'1^"Johan Phillip Kimerger (1721-1783)"  r1      r1      r1         
-            r1                                        r1      r1      r1  
-            r1                                                            \bar "||" % regel2
+              % Single Regel2
+              \time 9/1
+              c'1^"Johan Phillip Kimberger (1721-1783)"  g'      e'      a'         
+              r1                                        r1      r1      r1  
+              r1                                                            \bar "||" % regel2
             }
             \break                                                          
 
             \relative {                                                              
             % Single Regel3
-            \time 16/1
+            \time 11/1
             % ToDo
             % Letop Hier onstaat een fout melding
             %  
-            a1^"Franz Joseph Haydn (1732-1809)"      r1      r1      r1        
+            a1^"Franz Joseph Haydn (1732-1809)"      c1      b1      e1        
             r1                                       r1      r1      r1        
-            r1                                       r1      r1      r1        
-            r1                                       r1      r1      r1  \bar "||" % regel3
+            r1                                       r1      r1          \bar "||" % regel3
             }
             \break
 
-            {
-            % Single Regel4
-            \time 16/1
-            c'1^"Johann Georg Albrechtsberger (1736 - 1809)"       r1      r1      r1
-            r1                                                     r1      r1      r1
-            r1                                                     r1      r1      r1
-            r1                                                     r1      r1      r1  \bar "||" % regel4
+            \relative {
+              % Single Regel4
+              \time 12/1
+              c'1^"Johann Georg Albrechtsberger (1736 - 1809)"       e1      d1      b1
+              r1                                                     r1      r1      r1
+              r1                                                     r1      r1      r1  \bar "||" % regel4
             }
             \break
 
-            {
-            % Single Regel5
-            \time 16/1
-            d'1^"Luigi Cherubini (1760 - 1842)"      r1      r1      r1        
-            r1                                       r1      r1      r1        
-            r1                                       r1      r1      r1        
-            r1                                       r1      r1      r1        \bar "||" % regel5
+            \relative {
+              % Single Regel5
+              \time 14/1
+              d'1^"Luigi Cherubini (1760 - 1842)"      g1      e1      f1        
+              r1                                       r1      r1      r1        
+              r1                                       r1      r1      r1        
+              r1                                       r1                  \bar "||" % regel5
             }
             \break
 
-            {
-            \time 16/1
-            % Single Regel6
-            e'1^"Knud Jeppesen (1892 - 1974)"     r1      r1      r1       
-            r1                                    r1      r1      r1        
-            r1                                    r1      r1      r1        
-            r1                                    r1      r1      r1        \bar "||" % regel6
+            \relative {
+              \time 9/1
+              % Single Regel6
+              e'1^"Knud Jeppesen (1892 - 1974)"     d1      e1      f1       
+              r1                                    r1       r1       r1                      
+              r1                                                          \bar "||" % regel6
             }
             \break
 
