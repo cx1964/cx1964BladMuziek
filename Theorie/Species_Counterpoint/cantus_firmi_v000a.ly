@@ -1,8 +1,4 @@
-%\version "2.24.3"
-%
-% toDo uograde lilypond door build lily pond 2.24.3
-
-\version "2.22.1"
+\version "2.24.3"
 
 % file: cantus_firmi_v000a.ly
 % C.X. la Fontaine
