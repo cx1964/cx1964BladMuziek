@@ -30,52 +30,65 @@ single =
             % Aantal bekende noten op de G-sleutel (treble)
             % c'4^"C4" = centrale C
 
+            {
             % Single Regel1
             \time 12/1
-            c'^"Thomas Morley (c. 1557 - 1602)"      r4      r4      r4  
-            r4                                        r4      r4      r4        
-            r4                                        r4      r4      r4        
-            r4                                        r4      r4      r4  \bar "||" % regel1
+            c'1^"Thomas Morley (c. 1557 - 1602)"      r1      r1      r1  
+            r1                                        r1      r1      r1        
+            r1                                        r1      r1      r1  \bar "||" % regel1
+            }
             \break                                                        
-                                                                            
+
+            {                                                                
             % Single Regel2
-            %\time 9/1
-            c'^"Johan Phillip Kimerger (1721-1783)"  r4      r4      r4         
-            r4                                        r4      r4      r4  
-            r4                                        r4      r4      r4        
-            r4                                        r4      r4      r4  \bar "||" % regel2
+            \time 9/1
+            c'1^"Johan Phillip Kimerger (1721-1783)"  r1      r1      r1         
+            r1                                        r1      r1      r1  
+            r1                                                            \bar "||" % regel2
+            }
             \break                                                          
-                                                                          
+
+            \relative {                                                              
             % Single Regel3
             \time 16/1
             % ToDo
             % Letop Hier onstaat een fout melding
             %  
-            a3^"Franz Joseph Haydn (1732-1809)"       r4      r4      r4        
-            r4                                        r4      r4      r4        
-            r4                                        r4      r4      r4        
-            r4                                        r4      r4      r4  \bar "||" % regel3
+            a1^"Franz Joseph Haydn (1732-1809)"      r1      r1      r1        
+            r1                                       r1      r1      r1        
+            r1                                       r1      r1      r1        
+            r1                                       r1      r1      r1  \bar "||" % regel3
+            }
             \break
 
+            {
             % Single Regel4
-            c'^"Johann Georg Albrechtsberger (1736 - 1809)"       r4      r4      r4
-            r4                                                     r4      r4      r4
-            r4                                                     r4      r4      r4
-            r4                                                     r4      r4      r4  \bar "||" % regel4
+            \time 16/1
+            c'1^"Johann Georg Albrechtsberger (1736 - 1809)"       r1      r1      r1
+            r1                                                     r1      r1      r1
+            r1                                                     r1      r1      r1
+            r1                                                     r1      r1      r1  \bar "||" % regel4
+            }
             \break
 
+            {
             % Single Regel5
-            d'^"Luigi Cherubini (1760 - 1842)"      r4      r4      r4        
-            r4                                       r4      r4      r4        
-            r4                                       r4      r4      r4        
-            r4                                       r4      r4      r4        \bar "||" % regel5
+            \time 16/1
+            d'1^"Luigi Cherubini (1760 - 1842)"      r1      r1      r1        
+            r1                                       r1      r1      r1        
+            r1                                       r1      r1      r1        
+            r1                                       r1      r1      r1        \bar "||" % regel5
+            }
             \break
 
+            {
+            \time 16/1
             % Single Regel6
-            e'^"Knud Jeppesen (1892 - 1974)"      r4      r4      r4        
-            r4                                    r4      r4      r4        
-            r4                                    r4      r4      r4        
-            r4                                    r4      r4      r4        \bar "||" % regel6
+            e'1^"Knud Jeppesen (1892 - 1974)"     r1      r1      r1       
+            r1                                    r1      r1      r1        
+            r1                                    r1      r1      r1        
+            r1                                    r1      r1      r1        \bar "||" % regel6
+            }
             \break
 
           } 
@@ -85,7 +98,7 @@ single =
 \book {
   \header {
     title =  "Cantus Firmi"
-    subtitle =  "Solfege template versie v000"
+    subtitle =  "Solfège template versie v000"
     % composer =  ""
     encodingsoftware =  "Handmatig"
     encodingdate =  "20240706"
